@@ -1,5 +1,3 @@
-import Formok from "./FormOk";
-
 const Form = ({
   name,
   setName,
@@ -67,7 +65,7 @@ const Form = ({
             }}
           />
           <br />
-          <input type="submit" value="Se connecter" />
+          <input className="connect" type="submit" value="Se connecter" />
         </form>
       </div>
     </div>

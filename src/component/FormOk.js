@@ -7,10 +7,19 @@ const Formok = ({ name, email, password, matchingMail, setMatchingMail }) => {
         <p>Email :{email}</p>
         <p>Password :{password}</p>
         <br />
-        <input type="submit" value="Edit your informations" />
+        <button
+          className="button"
+          onClick={() => {
+            setMatchingMail(false);
+          }}
+        >
+          Edit your informations
+        </button>
       </div>
     </div>
   );
 };
 
 export default Formok;
+
+// fare un butto onclick e transormre setMatchingMail(false);
