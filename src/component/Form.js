@@ -49,6 +49,9 @@ const Form = ({
             value={password}
             placeholder="pip0djwkd$j"
             type="password"
+            style={{
+              border: password !== confirm ? "#8E6C88 2px solid" : null,
+            }}
             onChange={(event) => {
               setPassword(event.target.value);
             }}
@@ -56,10 +59,13 @@ const Form = ({
 
           <p>Confirm your Password</p>
           <input
-            className="confirm"
+            className={matchingMail !== "red"}
             value={confirm}
             placeholder="pip0djwkd$j"
             type="password"
+            style={{
+              border: password !== confirm ? "#8E6C88 2px solid" : null,
+            }}
             onChange={(event) => {
               setConfirm(event.target.value);
             }}
