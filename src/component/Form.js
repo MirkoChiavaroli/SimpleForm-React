@@ -1,4 +1,4 @@
-import Formok from "./Form-ok";
+import Formok from "./FormOk";
 
 const Form = ({
   name,
@@ -15,12 +15,12 @@ const Form = ({
     if (password !== confirm) {
       alert("Vos duex mots de passe ne sont pas identiques");
     } else {
-      return showUp;
+      setMatchingMail(true);
     }
   };
   return (
     <div>
-      <div className="check-ok">
+      <div className="checkOk">
         <h1>Create account</h1>
         <form onSubmit={checkEmail}>
           <p>Name</p>
