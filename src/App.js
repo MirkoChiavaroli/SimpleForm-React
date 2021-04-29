@@ -13,7 +13,6 @@ function App() {
   return (
     <div>
       <Form
-        className={matchingMail === true ? "hidden" : "display"}
         name={name}
         setName={setName}
         email={email}
@@ -26,10 +25,10 @@ function App() {
         setMatchingMail={setMatchingMail}
       />
       <Formok
-        className="showUp"
-        name={name}
-        email={email}
-        password={password}
+        className={matchingMail === true ? "hidden" : "display"}
+        // name={name}
+        // email={email}
+        // password={password}
       />
     </div>
   );

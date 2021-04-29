@@ -9,6 +9,8 @@ const Form = ({
   setPassword,
   confirm,
   setConfirm,
+  matchingMail,
+  setMatchingMail,
 }) => {
   const checkEmail = (event) => {
     event.preventDefault();

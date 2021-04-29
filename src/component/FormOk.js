@@ -1,7 +1,7 @@
-const Formok = ({ name, email, password }) => {
+const Formok = ({ name, email, password, matchingMail, setMatchingMail }) => {
   return (
     <div>
-      <div className="showUp">
+      <div className="matchingMail">
         <h1>Results</h1>
         <p>Name :{name}</p>
         <p>Email :{email}</p>
