@@ -11,7 +11,7 @@ function App() {
   const [matchingMail, setMatchingMail] = useState(false);
 
   return (
-    <div>
+    <div {className={matchingMail === true ? Form "show" : FormOk "show"}}>
       <Form
         name={name}
         setName={setName}
@@ -24,12 +24,7 @@ function App() {
         matchingMail={matchingMail}
         setMatchingMail={setMatchingMail}
       />
-      <Formok
-        className={matchingMail === true ? "hidden" : "display"}
-        // name={name}
-        // email={email}
-        // password={password}
-      />
+      <Formok name={name} email={email} password={password} />
     </div>
   );
 }
